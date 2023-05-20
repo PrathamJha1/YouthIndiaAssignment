@@ -2,7 +2,7 @@ const express = require('express');
 const { google } = require('googleapis');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const CLIENT_ID = '129690161184-uoi4kikpd6i9vkms3ngmm01bs112m2ns.apps.googleusercontent.com';
 const CLIENT_SECRET = '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';
@@ -70,5 +70,5 @@ async function getEvents(accessToken) {
 }
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on ${port}`);
 });
