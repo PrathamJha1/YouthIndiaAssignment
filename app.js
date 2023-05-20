@@ -6,7 +6,7 @@ const port = 3000;
 
 const CLIENT_ID = '129690161184-uoi4kikpd6i9vkms3ngmm01bs112m2ns.apps.googleusercontent.com';
 const CLIENT_SECRET = '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';
-const REDIRECT_URI = 'http://localhost:3000/rest/v1/calendar/redirect/';
+const REDIRECT_URI = 'https://backend-assignment-b2hd.onrender.com/rest/v1/calendar/redirect/';
 const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
 
 app.set('view engine', 'ejs');
