@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events</title>
+</head>
+<body>
+  <h1>Events</h1>
+
+  <% if (events && events.length) { %>
+    <ul>
+      <% events.forEach(event => { %>
+        <li><%= event.summary %></li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>No events found.</p>
+  <% } %>
+
+  <h2>Access Token:</h2>
+  <p><%= accessToken %></p>
+</body>
+</html>
